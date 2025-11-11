@@ -1,0 +1,338 @@
+<!-- <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - AutoLocation</title>
+    <link rel="stylesheet" href="styles/auth.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div class="auth-logo">
+                    <i class="fas fa-car"></i>
+                    <span>AutoLocation</span>
+                </div>
+                <h1>Connexion</h1>
+                <p>Accédez à votre espace de gestion</p>
+            </div>
+
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="email">Adresse email</label>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+                        <button type="button" class="password-toggle">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox" name="remember">
+                        <span class="checkmark"></span>
+                        Se souvenir de moi
+                    </label>
+                    <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Se connecter
+                </button>
+
+                <div class="auth-divider">
+                    <span>ou</span>
+                </div>
+
+                <button type="button" class="btn btn-google">
+                    <i class="fab fa-google"></i>
+                    Continuer avec Google
+                </button>
+            </form>
+
+            <div class="auth-footer">
+                <p>Vous n'avez pas de compte ? <a href="register.html">Créer un compte</a></p>
+                <a href="../index.html" class="back-home">
+                    <i class="fas fa-arrow-left"></i>
+                    Retour à l'accueil
+                </a>
+            </div>
+        </div>
+
+        <div class="auth-background">
+            <div class="auth-slider">
+                <div class="auth-slide active">
+                    <img src="https://images.unsplash.com/photo-1486496572940-2bb2341fdbdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Gestion de flotte">
+                    <div class="slide-content">
+                        <h3>Gestion Complète</h3>
+                        <p>Gérez votre flotte de véhicules en temps réel</p>
+                    </div>
+                </div>
+                <div class="auth-slide">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Analytique">
+                    <div class="slide-content">
+                        <h3>Analytique Avancée</h3>
+                        <p>Suivez vos performances avec des rapports détaillés</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal d'erreur --
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Erreur de connexion</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p id="errorMessage"></p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="modalClose">Fermer</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - AutoLocation</title>
+    <link rel="stylesheet" href="styles/auth.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div class="auth-logo">
+                    <i class="fas fa-car"></i>
+                    <span>AutoLocation</span>
+                </div>
+                <h1>Connexion Espace Pro</h1>
+                <p>Accédez à votre espace de gestion</p>
+            </div>
+
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="email">Adresse email</label>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+                        <button type="button" class="password-toggle">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox" name="remember">
+                        <span class="checkmark"></span>
+                        Se souvenir de moi
+                    </label>
+                    <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Se connecter
+                </button>
+
+                <!-- Comptes de démonstration -->
+                <div class="demo-accounts">
+                    <div class="demo-title">Comptes de démonstration :</div>
+                    
+                    <div class="demo-account" data-email="admin@autolocation.fr" data-password="admin123">
+                        <div class="demo-role">🔧 Administrateur</div>
+                        <div class="demo-credentials">admin@autolocation.fr / admin123</div>
+                        <div class="demo-click">Cliquer pour remplir</div>
+                    </div>
+
+                    <div class="demo-account" data-email="gestion@autolocation.fr" data-password="gestion123">
+                        <div class="demo-role">👔 Manager</div>
+                        <div class="demo-credentials">gestion@autolocation.fr / gestion123</div>
+                        <div class="demo-click">Cliquer pour remplir</div>
+                    </div>
+
+                    <div class="demo-account" data-email="employe@autolocation.fr" data-password="employe123">
+                        <div class="demo-role">👨‍💼 Employé</div>
+                        <div class="demo-credentials">employe@autolocation.fr / employe123</div>
+                        <div class="demo-click">Cliquer pour remplir</div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="auth-footer">
+                <a href="index.html" class="back-home">
+                    <i class="fas fa-arrow-left"></i>
+                    Retour à l'accueil
+                </a>
+            </div>
+        </div>
+
+        <div class="auth-background">
+            <div class="auth-slider">
+                <div class="auth-slide active">
+                    <img src="https://images.unsplash.com/photo-1486496572940-2bb2341fdbdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Gestion de flotte">
+                    <div class="slide-content">
+                        <h3>Gestion Complète</h3>
+                        <p>Gérez votre flotte de véhicules en temps réel</p>
+                    </div>
+                </div>
+                <div class="auth-slide">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Analytique">
+                    <div class="slide-content">
+                        <h3>Analytique Avancée</h3>
+                        <p>Suivez vos performances avec des rapports détaillés</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal d'erreur -->
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Erreur de connexion</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p id="errorMessage"></p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="modalClose">Fermer</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Gestion du formulaire de connexion
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const button = this.querySelector('button[type="submit"]');
+            const originalText = button.innerHTML;
+
+            // Simulation de connexion
+            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Connexion...';
+            button.disabled = true;
+
+            setTimeout(() => {
+                // Vérification des identifiants
+                const validAccounts = {
+                    'admin@autolocation.fr': 'admin123',
+                    'gestion@autolocation.fr': 'gestion123', 
+                    'employe@autolocation.fr': 'employe123'
+                };
+
+                if (validAccounts[email] && validAccounts[email] === password) {
+                    // Redirection vers l'espace pro
+                    alert('Connexion réussie ! Redirection vers l\'espace de gestion...');
+                    window.location.href = 'espace-pro.html';
+                } else {
+                    document.getElementById('errorMessage').textContent = 'Email ou mot de passe incorrect. Utilisez les comptes de démonstration.';
+                    document.getElementById('errorModal').style.display = 'block';
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                }
+            }, 1500);
+        });
+
+        // Remplissage automatique des comptes de démonstration
+        document.querySelectorAll('.demo-account').forEach(account => {
+            account.addEventListener('click', function() {
+                const email = this.getAttribute('data-email');
+                const password = this.getAttribute('data-password');
+                
+                document.getElementById('email').value = email;
+                document.getElementById('password').value = password;
+                
+                // Retirer la sélection des autres comptes
+                document.querySelectorAll('.demo-account').forEach(acc => {
+                    acc.style.background = 'var(--light-bg)';
+                });
+                
+                // Mettre en évidence le compte sélectionné
+                this.style.background = 'var(--primary-light)';
+            });
+        });
+
+        // Toggle mot de passe
+        document.querySelector('.password-toggle').addEventListener('click', function() {
+            const passwordInput = document.getElementById('password');
+            const icon = this.querySelector('i');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+
+        // Gestion de la modal
+        document.querySelector('.close').addEventListener('click', function() {
+            document.getElementById('errorModal').style.display = 'none';
+        });
+
+        document.getElementById('modalClose').addEventListener('click', function() {
+            document.getElementById('errorModal').style.display = 'none';
+        });
+
+        // Fermer la modal en cliquant à l'extérieur
+        window.addEventListener('click', function(e) {
+            const modal = document.getElementById('errorModal');
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Slider automatique
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.auth-slide');
+        
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+</html>

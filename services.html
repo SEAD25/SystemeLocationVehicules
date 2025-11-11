@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - AutoLocation</title>
+    <link rel="stylesheet" href="styles/services.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"> <!-- Lien corrigé -->
+                <i class="fas fa-car"></i>
+                AutoLocation
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Accueil</a> <!-- Lien corrigé -->
+                <a href="index.html#vehicles" class="nav-link">Véhicules</a> <!-- Lien corrigé -->
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="index.html#contact" class="nav-link">Contact</a> <!-- Lien corrigé -->
+                <a href="login.html" class="nav-link login-btn">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Espace Pro <!-- Texte corrigé -->
+                </a>
+            </div>
+
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-services">
+        <div class="hero-services-content">
+            <h1 class="hero-services-title">Nos Services Premium</h1>
+            <p class="hero-services-subtitle">
+                Découvrez notre gamme complète de services de location adaptés à tous vos besoins
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <p class="section-subtitle">
+                Des solutions de location flexibles et personnalisées pour particuliers et professionnels
+            </p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card" id="courte-duree"> <!-- ID ajouté -->
+                    <div class="service-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Location courte durée</h3>
+                    <p>Parfait pour vos déplacements ponctuels, week-ends et vacances</p>
+                    <ul class="service-features">
+                        <li>Location à la journée ou à la semaine</li>
+                        <li>Flexibilité totale</li>
+                        <li>Assurance tous risques incluse</li>
+                        <li>Kilométrage illimité</li>
+                        <li>Assistance 24h/24</li>
+                    </ul>
+                    <a href="login.html" class="btn btn-primary btn-full"> <!-- Lien corrigé -->
+                        <i class="fas fa-calendar-check"></i>
+                        Réserver maintenant
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card" id="longue-duree"> <!-- ID ajouté -->
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Location longue durée</h3>
+                    <p>La solution idéale pour vos besoins professionnels ou personnels durables</p>
+                    <ul class="service-features">
+                        <li>Contrats de 1 à 36 mois</li>
+                        <li>Entretien et maintenance inclus</li>
+                        <li>Assurance complète</li>
+                        <li>Véhicule neuf garanti</li>
+                        <li>Option d'achat en fin de contrat</li>
+                    </ul>
+                    <a href="index.html#contact" class="btn btn-primary btn-full"> <!-- Lien corrigé -->
+                        <i class="fas fa-arrow-right"></i>
+                        Demander un devis
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card" id="vehicules-luxe"> <!-- ID ajouté -->
+                    <div class="service-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Véhicules de luxe</h3>
+                    <p>Vivez une expérience exceptionnelle avec notre sélection de véhicules premium</p>
+                    <ul class="service-features">
+                        <li>BMW, Mercedes, Audi, Porsche</li>
+                        <li>Confort et technologie de pointe</li>
+                        <li>Service personnalisé</li>
+                        <li>Livraison sur rendez-vous</li>
+                        <li>Options haut de gamme</li>
+                    </ul>
+                    <a href="index.html#vehicles" class="btn btn-primary btn-full"> <!-- Lien corrigé -->
+                        <i class="fas fa-eye"></i>
+                        Voir les véhicules
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card" id="service-chauffeur"> <!-- ID ajouté -->
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Service chauffeur</h3>
+                    <p>Profitez d'un service de conduite professionnel pour tous vos déplacements</p>
+                    <ul class="service-features">
+                        <li>Chauffeurs professionnels</li>
+                        <li>Disponible 24h/24 et 7j/7</li>
+                        <li>Aéroports, gares, événements</li>
+                        <li>Service corporate</li>
+                        <li>Réservation flexible</li>
+                    </ul>
+                    <a href="index.html#contact" class="btn btn-primary btn-full"> <!-- Lien corrigé -->
+                        <i class="fas fa-phone"></i>
+                        Nous contacter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">Pourquoi Nous Choisir ?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Sécurité Garantie</h4>
+                    <p>Véhicules régulièrement contrôlés et assurances complètes incluses</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4>Support 24/7</h4>
+                    <p>Notre équipe est disponible 24h/24 pour vous accompagner</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-euro-sign"></i>
+                    </div>
+                    <h4>Prix Transparents</h4>
+                    <p>Aucun frais caché, des tarifs clairs et compétitifs</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h4>Large Choix</h4>
+                    <p>Plus de 50 modèles de véhicules adaptés à tous les besoins</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Prêt à Réserver ?</h2>
+                <p class="cta-subtitle">Contactez-nous dès maintenant pour trouver la solution de location parfaite</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn btn-secondary"> <!-- Lien corrigé -->
+                        <i class="fas fa-phone"></i>
+                        Nous Contacter
+                    </a>
+                    <a href="index.html#vehicles" class="btn btn-primary"> <!-- Lien corrigé -->
+                        <i class="fas fa-car"></i>
+                        Voir les Véhicules
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>AutoLocation</h3>
+                    <p>Votre partenaire de confiance pour la location de véhicules de prestige depuis 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li> <!-- Lien corrigé -->
+                        <li><a href="index.html#vehicles">Véhicules</a></li> <!-- Lien corrigé -->
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li> <!-- Lien corrigé -->
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#courte-duree">Location courte durée</a></li> <!-- Lien corrigé -->
+                        <li><a href="services.html#longue-duree">Location longue durée</a></li> <!-- Lien corrigé -->
+                        <li><a href="services.html#vehicules-luxe">Véhicules de luxe</a></li> <!-- Lien corrigé -->
+                        <li><a href="services.html#service-chauffeur">Service chauffeur</a></li> <!-- Lien corrigé -->
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Avenue de la Location</li>
+                        <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+                        <li><i class="fas fa-envelope"></i> contact@autolocation.fr</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoLocation. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation mobile toggle
+        document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

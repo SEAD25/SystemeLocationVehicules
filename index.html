@@ -1,34 +1,236 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Système de Location de Véhicules</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location de Véhicules - Accueil</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>🚗 Système de Location de Véhicules</h1>
-    <nav>
-      <a href="#">Accueil</a>
-      <a href="#">Véhicules</a>
-      <a href="#">Clients</a>
-      <a href="#">Contrats</a>
-      <a href="#">Connexion</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-car"></i>
+                <span>AutoLocation</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="#vehicles" class="nav-link">Véhicules</a>
+                <a href="services.html" class="nav-link">Services</a> <!-- Lien corrigé -->
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="login.html" class="nav-link login-btn">Espace Pro</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <main>
-    <section>
-      <h2>Bienvenue sur notre plateforme</h2>
-      <p>Gérez facilement vos véhicules, vos clients et vos locations en ligne.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Location de Véhicules de Prestige</h1>
+            <p class="hero-subtitle">Découvrez notre flotte de véhicules et profitez du meilleur service de location</p>
+            <div class="hero-buttons">
+                <a href="#vehicles" class="btn btn-primary">Voir les véhicules</a>
+                <a href="services.html" class="btn btn-secondary">Découvrir nos services</a> <!-- Lien corrigé -->
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="car-slider">
+                <div class="car-slide active">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Car">
+                    <div class="car-info">
+                        <h3>BMW Série 7</h3>
+                        <p>À partir de 95€/jour</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>© 2025 - Projet L3 Ingénierie Informatique - UASZ</p>
-  </footer>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Pourquoi nous choisir ?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Assurance Complète</h3>
+                    <p>Protection tous risques incluse dans tous nos forfaits de location</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Disponibilité 24/7</h3>
+                    <p>Service client disponible 24h/24 et 7j/7 pour vos urgences</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3>Large Choix</h3>
+                    <p>Plus de 50 véhicules différents, du citycar au SUV de luxe</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-euro-sign"></i>
+                    </div>
+                    <h3>Prix Compétitifs</h3>
+                    <p>Les meilleurs prix du marché garantis sans frais cachés</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Vehicles Section -->
+    <section id="vehicles" class="vehicles-section">
+        <div class="container">
+            <h2 class="section-title">Notre Flotte</h2>
+            <div class="vehicles-grid" id="vehiclesGrid">
+                <!-- Les véhicules seront chargés dynamiquement -->
+            </div>
+            <div class="section-cta">
+                <a href="services.html" class="btn btn-large">Découvrir nos services</a> <!-- Lien corrigé -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Clients satisfaits</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Véhicules disponibles</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="1500">0</div>
+                    <div class="stat-label">Locations effectuées</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="99">0</div>
+                    <div class="stat-label">% de satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>123 Avenue de la Location<br>75001 Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@autolocation.fr</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horaires</h3>
+                            <p>Lun - Ven: 8h00 - 20h00<br>Sam - Dim: 9h00 - 18h00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Votre téléphone">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Votre message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>AutoLocation</h3>
+                    <p>Votre partenaire de confiance pour la location de véhicules depuis 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li> <!-- Lien corrigé -->
+                        <li><a href="#vehicles">Véhicules</a></li>
+                        <li><a href="services.html">Services</a></li> <!-- Lien corrigé -->
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#courte-duree">Location courte durée</a></li> <!-- Lien corrigé -->
+                        <li><a href="services.html#longue-duree">Location longue durée</a></li> <!-- Lien corrigé -->
+                        <li><a href="services.html#vehicules-luxe">Véhicules de luxe</a></li> <!-- Lien corrigé -->
+                        <li><a href="services.html#service-chauffeur">Service chauffeur</a></li> <!-- Lien corrigé -->
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoLocation. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
